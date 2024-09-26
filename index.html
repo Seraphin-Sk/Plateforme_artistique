@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSOUL-PROD - Plateforme Artistique</title>
+
+    <!-- Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Style css -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
 </head>
 <body>
     <!-- Navigation -->
@@ -33,7 +46,18 @@
                         <a class="nav-link" href="#submission">Soumission</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/assets/html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/assets/html/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+
+                    <!-- Bouton de recherche avec icône -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +65,7 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5" style="background-image: url('header-bg.jpg'); background-size: cover; background-position: center;">
+    <header class="bg-header text-white text-center py-5" style="background-image: url('header-bg.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <h1>Plateforme d'Identification des Artistes</h1>
             <p class="lead">Gérer, promouvoir et protéger les talents artistiques avec MSOUL-PROD</p>
@@ -50,17 +74,24 @@
     </header>
 
     <!-- Section Présentation -->
-    <section id="presentation" class="py-5 bg-light">
+    <section id="presentation" class="py-5 bg-light present">
         <div class="container">
             <h2 class="text-center">À propos de MSOUL-PROD</h2>
             <p class="text-center lead">Une plateforme dédiée à la gestion et à la promotion des artistes congolais et leurs œuvres.</p>
             <div class="row mt-4">
                 <div class="col-md-6">
                     <h4>Notre Mission</h4>
-                    <p>Nous facilitons l'identification des artistes, la gestion de leurs œuvres et la protection de leurs droits d'auteur en utilisant une plateforme numérique avancée.</p>
+                    <p>
+                        Nous facilitons l'identification des artistes, la gestion de leurs œuvres et la protection de leurs droits d'auteur en utilisant une plateforme numérique avancée.
+                    </p>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, nobis assumenda consequatur maxime, fugiat doloremque commodi vel, recusandae ipsa corrupti possimus mollitia ex eius rem dolor consectetur! Ex, deserunt quae!
+                        Rerum, blanditiis quas eius doloribus rem incidunt. Impedit quod architecto necessitatibus nihil molestias quasi dolore, corrupti esse fugiat, repellat quae, delectus ipsa numquam consequuntur non cupiditate quam. <br><br> Beatae, exercitationem corporis.
+                        Tempora, accusamus. Ipsam ab, voluptates totam, dicta voluptatem consequuntur ducimus eum harum tempora laborum ut asperiores. Voluptatem nobis magnam laborum doloribus perspiciatis sint vero fugiat, quis facere eos dicta? Esse?
+                        Fugiat ab dolorem sequi ut, optio suscipit, blanditiis numquam animi debitis reprehenderit neque veritatis eveniet in ratione iure voluptas ea! Quibusdam adipisci amet voluptatum! Quae ut quod deserunt sint delectus?
+                    </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="/assets/img/presentation.jpg" class="img-fluid rounded" alt="Image de présentation">
+                    <img src="/assets/img/presentation 3.jpg" class="img-fluid rounded" alt="Image de présentation">
                 </div>
             </div>
         </div>
@@ -69,37 +100,47 @@
     <!-- Section des artistes -->
     <section id="artists" class="py-5">
         <div class="container">
-            <h2 class="text-center">Nos Artistes</h2>
+            <!-- <h2 class="text-center">Nos Artistes</h2> -->
+            <h2 class="animate__animated animate__fadeInLeft">Nos Artistes</h2>
             <div class="row mt-4">
+                <!-- artiste 1 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="/assets/img/artiste 2.jpg" class="card-img-top" alt="Artiste 2">
+                        <!-- <img src="/assets/img/artiste 2.jpg" class="card-img-top" alt="Artiste 2"> -->
+                        <img src="/assets/img/artiste 2.jpg" class="card-img-top animate__animated animate__zoomIn">
                         <div class="card-body">
-                            <h5 class="card-title">Artiste 2</h5>
+                            <h5 class="card-title">Artiste 1 - Musical</h5>
                             <p class="card-text">
-                                Marie Kanza, chanteuse afropop influente, connue pour ses collaborations internationales.
+                                <strong>Marie Kanza</strong>, chanteuse afropop influente, connue pour ses collaborations internationales.
                             </p>
                             <!-- Bouton Voir plus -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artist2Modal">
-                                Voir plus
+                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artist1Modal"> -->
+                            <button class="btn btn-primary animate__animated animate__pulse animate__infinite" data-bs-target="#artist1Modal" data-bs-toggle="modal" >
+                                Détails sur l'artiste
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modale pour Artiste 2 -->
-                <div class="modal fade" id="artist2Modal" tabindex="-1" aria-labelledby="artist2ModalLabel" aria-hidden="true">
+                <!-- Modale pour Artiste 1 -->
+                <div class="modal fade" id="artist1Modal" tabindex="-1" aria-labelledby="artist2ModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="artist2ModalLabel">Marie Kanza - Artiste 2</h5>
+                                <h5 class="modal-title" id="artist2ModalLabel">Marie Kanza - Artiste Musical</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <!-- Détails complets de l'artiste -->
-                                <p><strong>Marie Kanza</strong> est une chanteuse et compositrice congolaise, spécialisée dans l'afropop. Elle a commencé sa carrière à l'âge de 18 ans et a rapidement gagné en popularité grâce à son album "Mélodie du Cœur".</p>
-                                <p>En 2021, elle a collaboré avec des artistes internationaux tels que **Yemi Alade** et **Diamond Platnumz** dans le cadre du projet "Voix de l'Afrique".</p>
-                                <p>Marie a remporté de nombreux prix, dont celui de la **Meilleure Artiste Féminine 2022** aux African Music Awards.</p>
+                                <p>
+                                    <strong>Marie Kanza</strong> est une chanteuse et compositrice congolaise, spécialisée dans l'afropop. Elle a commencé sa carrière à l'âge de 18 ans et a rapidement gagné en popularité grâce à son album "Mélodie du Cœur".
+                                </p>
+                                <p>
+                                    En 2021, elle a collaboré avec des artistes internationaux tels que **Yemi Alade** et **Diamond Platnumz** dans le cadre du projet "Voix de l'Afrique".
+                                </p>
+                                <p>
+                                    Marie a remporté de nombreux prix, dont celui de la **Meilleure Artiste Féminine 2022** aux African Music Awards.
+                                </p>
                                 <ul>
                                     <li><strong>Albums :</strong> "Mélodie du Cœur" (2018), "Éveil" (2020), "Élévation" (2023)</li>
                                     <li><strong>Tournées :</strong> Nigeria, France, États-Unis</li>
@@ -112,17 +153,18 @@
                     </div>
                 </div>
 
+                <!-- Artiste 2 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="/assets/img/artiste 2.jpg" class="card-img-top" alt="Artiste 2">
+                        <img src="/assets/img/artiste 1.jpg" class="card-img-top" alt="Artiste 2">
                         <div class="card-body">
-                            <h5 class="card-title">Artiste 2</h5>
+                            <h5 class="card-title">Artiste 2 - Peintre</h5>
                             <p class="card-text">
-                                Marie Kanza, chanteuse afropop influente, connue pour ses collaborations internationales.
+                                <strong>Jean Kadima</strong>, artiste peintre congolais reconnu pour ses œuvres expressives qui reflètent la culture africaine.
                             </p>
                             <!-- Bouton Voir plus -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artist2Modal">
-                                Voir plus
+                            <button class="btn btn-primary animate__animated animate__pulse animate__infinite" data-bs-target="#artist2Modal" data-bs-toggle="modal" >
+                                Détails sur l'artiste
                             </button>
                         </div>
                     </div>
@@ -133,17 +175,23 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="artist2ModalLabel">Marie Kanza - Artiste 2</h5>
+                                <h5 class="modal-title" id="artist2ModalLabel">Jean Kadima - Artiste Peintre</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <!-- Détails complets de l'artiste -->
-                                <p><strong>Marie Kanza</strong> est une chanteuse et compositrice congolaise, spécialisée dans l'afropop. Elle a commencé sa carrière à l'âge de 18 ans et a rapidement gagné en popularité grâce à son album "Mélodie du Cœur".</p>
-                                <p>En 2021, elle a collaboré avec des artistes internationaux tels que **Yemi Alade** et **Diamond Platnumz** dans le cadre du projet "Voix de l'Afrique".</p>
-                                <p>Marie a remporté de nombreux prix, dont celui de la **Meilleure Artiste Féminine 2022** aux African Music Awards.</p>
+                                <p>
+                                    <strong>Jean Kadima</strong> est un artiste peintre congolais né en 1985 à Kinshasa. Il a commencé sa carrière en tant qu'autodidacte 
+                                    et s'est rapidement fait connaître pour ses œuvres reflétant la richesse culturelle africaine, en particulier la tradition congolaise. 
+                                </p>
+                                <p>
+                                    Ses peintures sont caractérisées par des couleurs vibrantes, des représentations de la vie quotidienne et des scènes historiques. 
+                                    Kadima a exposé ses œuvres dans plusieurs galeries à travers l'Afrique et l'Europe, et ses tableaux font partie de collections privées prestigieuses.
+                                </p>
                                 <ul>
-                                    <li><strong>Albums :</strong> "Mélodie du Cœur" (2018), "Éveil" (2020), "Élévation" (2023)</li>
-                                    <li><strong>Tournées :</strong> Nigeria, France, États-Unis</li>
+                                    <li><strong>Expositions :</strong> "Couleurs d'Afrique" (2018), "Voyages intérieurs" (2020)</li>
+                                    <li><strong>Prix :</strong> Prix du meilleur artiste visuel au Festival des Arts Africains (2019)</li>
+                                    <li><strong>Œuvres notables :</strong> "Le Retour aux Sources", "Les Rythmes du Congo"</li>
                                 </ul>
                             </div>
                             <div class="modal-footer">
@@ -153,38 +201,46 @@
                     </div>
                 </div>
 
+                <!-- Artiste 3 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="/assets/img/artiste 2.jpg" class="card-img-top" alt="Artiste 2">
+                        <img src="/assets/img/artiste 3.jpg" class="card-img-top" alt="Artiste 2">
                         <div class="card-body">
-                            <h5 class="card-title">Artiste 2</h5>
+                            <h5 class="card-title">Artiste 3 - Réalisateur de cinéma</h5>
                             <p class="card-text">
-                                Marie Kanza, chanteuse afropop influente, connue pour ses collaborations internationales.
+                                <strong>Sarah Lumbala</strong>, réalisatrice congolaise acclamée pour ses films engagés traitant des droits humains et des conflits en Afrique.
                             </p>
                             <!-- Bouton Voir plus -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artist2Modal">
-                                Voir plus
+                            <button class="btn btn-primary animate__animated animate__pulse animate__infinite" data-bs-target="#artist3Modal" data-bs-toggle="modal" >
+                                Détails sur l'artiste
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modale pour Artiste 2 -->
-                <div class="modal fade" id="artist2Modal" tabindex="-1" aria-labelledby="artist2ModalLabel" aria-hidden="true">
+                <!-- Modale pour Artiste 3 -->
+                <div class="modal fade" id="artist3Modal" tabindex="-1" aria-labelledby="artist2ModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="artist2ModalLabel">Marie Kanza - Artiste 2</h5>
+                                <h5 class="modal-title" id="artist2ModalLabel">Sarah Lumbala - Réalisatrice de cinéma</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <!-- Détails complets de l'artiste -->
-                                <p><strong>Marie Kanza</strong> est une chanteuse et compositrice congolaise, spécialisée dans l'afropop. Elle a commencé sa carrière à l'âge de 18 ans et a rapidement gagné en popularité grâce à son album "Mélodie du Cœur".</p>
-                                <p>En 2021, elle a collaboré avec des artistes internationaux tels que **Yemi Alade** et **Diamond Platnumz** dans le cadre du projet "Voix de l'Afrique".</p>
-                                <p>Marie a remporté de nombreux prix, dont celui de la **Meilleure Artiste Féminine 2022** aux African Music Awards.</p>
+                                <p>
+                                    <strong>Sarah Lumbala</strong> est une réalisatrice congolaise née à Lubumbashi. Son travail se concentre sur des sujets difficiles 
+                                    tels que les droits humains, les conflits armés, et la résilience des femmes en Afrique. 
+                                    Elle a réalisé plusieurs documentaires et films qui ont été projetés dans des festivals internationaux.
+                                </p>
+                                <p>
+                                    Son film le plus célèbre, "Voix de Femmes", a été primé au Festival de Cannes dans la catégorie Meilleur Documentaire en 2022. 
+                                    Lumbala est également une ardente défenseure des droits des femmes à travers ses œuvres cinématographiques.
+                                </p>
                                 <ul>
-                                    <li><strong>Albums :</strong> "Mélodie du Cœur" (2018), "Éveil" (2020), "Élévation" (2023)</li>
-                                    <li><strong>Tournées :</strong> Nigeria, France, États-Unis</li>
+                                    <li><strong>Films notables :</strong> "Voix de Femmes" (2022), "Résilience" (2020)</li>
+                                    <li><strong>Festivals :</strong> Cannes, Berlinale, Toronto International Film Festival</li>
+                                    <li><strong>Prix :</strong> Meilleur Documentaire à Cannes (2022), Meilleur Réalisateur au Festival du Cinéma Africain (2021)</li>
                                 </ul>
                             </div>
                             <div class="modal-footer">
@@ -204,7 +260,7 @@
             <div class="row mt-4">
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Projet 1">
+                        <img src="/assets/img/projet 4.jpg" class="card-img-top" alt="Projet 1">
                         <div class="card-body">
                             <h5 class="card-title">Projet 1 : Titre du projet</h5>
                             <p class="card-text">Description complète du projet artistique. Objectifs, artistes participants, et résultats attendus.</p>
@@ -213,7 +269,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Projet 2">
+                        <img src="/assets/img/projet 5.jpg" class="card-img-top" alt="Projet 2">
                         <div class="card-body">
                             <h5 class="card-title">Projet 2 : Titre du projet</h5>
                             <p class="card-text">Détails sur le deuxième projet artistique, impliquant plusieurs artistes de MSOUL-PROD.</p>
@@ -225,7 +281,7 @@
     </section>
 
     <!-- Formulaire de soumission -->
-    <section id="submission" class="py-5">
+    <section id="submission" class="bg-soumission py-5">
         <div class="container">
             <h2 class="text-center">Soumettre une Œuvre</h2>
             <form id="submission-form" class="mt-4">
@@ -283,12 +339,115 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <section id="supporters" class="py-5">
         <div class="container">
-            <p class="mb-0">© 2024 MSOUL-PROD - Tous droits réservés.</p>
+            <h2 class="text-center">Ceux qui nous soutiennent</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="/assets/img/logo-gray.png" alt="Supporter 1" class="img-fluid mb-3">
+                    <p><strong>Partenaire 1</strong></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="/assets/img/logo-gray.png" alt="Supporter 2" class="img-fluid mb-3">
+                    <p><strong>Partenaire 2</strong></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="/assets/img/logo-gray.png" alt="Supporter 3" class="img-fluid mb-3">
+                    <p><strong>Partenaire 3</strong></p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+           <div class="footer__title">
+              <h1 class="footer__logo">
+                  MSOUL-PROD
+              </h1> 
+
+              <p class="footer__description">
+                 Une plateforme dédiée à la gestion et à la promotion des artistes congolais et leurs œuvres.
+              </p>
+
+              <div class="block__footer">
+                 <div class="footer__group">
+                    <h3 class="footer__title__adress">
+                       Entrer en contact
+                    </h3>
+  
+                    <div class="footer__adress">
+                       <p><i class="ri-map-pin-fill"></i>  2e rue, Limete, Kishasa DRC</p>
+                       <p><i class="ri-phone-fill"></i>  +243  993 343 553</p>
+                       <p><i class="ri-mail-fill"></i>  msoul-prod@gmail.com</p>
+                    </div>
+  
+                    <div class="footer__icon">
+                       <a href="#" target="_blank" class="footer__social-link">
+                          <i class="ri-twitter-fill"></i>
+                       </a>
+  
+                       <a href="#" target="_blank" class="footer__social-link">
+                          <i class="ri-facebook-fill"></i>
+                       </a>
+  
+                       <a href="#" target="_blank" class="footer__social-link">
+                          <i class="ri-youtube-fill"></i>
+                       </a>
+  
+                       <a href="#" target="_blank" class="footer__social-link">
+                          <i class="ri-instagram-line"></i>
+                       </a>
+  
+                       <a href="#" target="_blank" class="footer__social-link">
+                          <i class="ri-linkedin-fill"></i>
+                       </a>
+                    </div>
+                 </div>
+  
+                 <div class="footer__link">
+                    <h3 class="link__title">
+                       Lien populaire
+                    </h3>
+  
+                    <div class="group__link__footer">
+                       <p class="link__foot">
+                          <i class="ri-arrow-right-s-fill"></i>
+                          <a href="#about" class="link__simple">A propos de nous</a>
+                       </p>
+     
+                       <p class="link__foot">
+                          <i class="ri-arrow-right-s-fill"></i>
+                          <a href="/assets/html/contact.html" class="link__simple">Contactez-nous</a>
+                       </p>
+     
+                       <p class="link__foot">
+                          <i class="ri-arrow-right-s-fill"></i>
+                          <a href="#about" class="link__simple">Politique de confidentialité</a>
+                       </p>
+     
+                       <p class="link__foot">
+                          <i class="ri-arrow-right-s-fill"></i>
+                          <a href="#about" class="link__simple">Termes de conditions</a>
+                       </p>
+     
+                       <p class="link__foot">
+                          <i class="ri-arrow-right-s-fill"></i>
+                          <a href="#about" class="link__simple">Carrière</a>
+                       </p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+
+           <div class="footer__copyright">
+              <p class="copyright__footer">
+                 &#169; 2024 MSOUL-PROD - Tous droits révervés.
+              </p>
+           </div>
+        </div>
+     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/javscript/script.js"></script>
