@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+    --hue: 210;
+    --first-color: hsl(var(--hue), 100%, 40%);
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
+    --title-color: hsl(228, 8%, 95%);
+    --text-color: hsl(230, 3%, 58%);
+    --body-color: hsl(228, 15%, 20%);
+    --container-color: hsl(228, 15%, 15%);
+    --backgraund-color: hsl(213, 84%, 37%);
+    /* --black-color : hsl(0, 0%, 0%);  */
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -32,3 +69,183 @@ footer {
     background-color: #007bff;
     color: white;
 }
+
+.bg-header{
+  background-color: #14183E;
+}
+
+.present{
+  background: url(../img/bg-hero.png) center center repeat;
+  background-size: contain;
+  padding: 5rem 3rem;
+}
+
+/* Animation de glissement */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Appliquer cette animation aux titres */
+h1, h2 {
+    animation: slideIn 1s ease-out;
+}
+
+
+/* Animation de zoom progressif */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Appliquer cette animation aux images des artistes */
+.card-img-top {
+    animation: zoomIn 1s ease-in-out;
+}
+
+
+/* Animation de pulsation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Appliquer l'animation sur hover */
+button:hover {
+    animation: pulse 0.5s infinite;
+}
+
+.animate {
+    animation-play-state: running;
+}
+
+h1, h2, .card-img-top {
+    animation-play-state: running;
+}
+
+
+
+/*=============== FOOTER ===============*/
+.footer{
+    background: url(../img/footer.png) center center no-repeat;
+    background-size: contain;
+    background-color: #14183e !important;
+    padding: 5rem 3rem;
+  }
+
+  .block__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__logo {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .footer__logo span {
+    color: var(--first-color);
+  }
+  
+  .footer__description{
+    padding: 1rem 0;
+    font-size: 0.8rem; 
+  }
+  
+  .footer__title__adress{
+    padding: 1rem 0;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .footer__adress p{
+    padding: 0.5rem 0;
+    color: var(--text-color);
+  }
+  
+  .footer__adress i{
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .footer__icon{
+    padding: 1rem 0;
+  }
+  
+  .footer__social-link i{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 5px;
+    margin: 0.3rem;
+    border: 1px solid rgba(256, 256, 256, .1);
+    border-radius: 50px;
+    transition: all 0.4s ease-out;
+    text-decoration: none;
+  }
+  
+  .footer__social-link i:hover{
+    background-color: var(--title-color);
+    color: var(--backgraund-color);
+  }
+  
+  .footer__link{
+    padding: 1rem 0;
+  }
+  
+  .link__title{
+    padding: 1.4rem 0;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .link__foot{
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    transition: all 0.3s ease-out;
+  }
+  
+  .link__foot:hover{
+    font-size: 18px;
+    font-weight: var(--font-medium);
+  }
+  .link__foot i{
+    font-size: 1.3rem;
+  }
+  
+  .link__foot a{
+    color: var(--text-color);
+  }
+  
+  .footer__copyright{
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+  }
+  
+  .copyright__footer{
+    text-align: center;
+  }
+  
+  .copyright__footer span{
+    text-decoration: underline;
+  }
