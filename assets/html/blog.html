@@ -46,10 +46,10 @@
                         <a class="nav-link" href="/index.html">Soumission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/assets/html/contact.html">Contact</a>
+                        <a class="nav-link" href="/assets/html/contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/assets/html/blog.html">Blog</a>
+                        <a class="nav-link active" href="/assets/html/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
@@ -96,25 +96,77 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
+    <!-- blog -->
+    <section id="news" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">Nous Contacter</h2>
-            <p class="text-center">Vous avez des questions ou des propositions ? N'hésitez pas à nous écrire.</p>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" required>
+            <h2 class="text-center">Actualités</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/assets/img/present 3.jpg" class="card-img-top" alt="Actualité 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nouvelle Exposition : Artistes à l'honneur</h5>
+                            <p class="card-text">Découvrez notre nouvelle exposition mettant en vedette des artistes contemporains...</p>
+                            <a href="#" class="btn btn-primary">Lire plus</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/assets/img/present 3.jpg" class="card-img-top" alt="Actualité 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Interview : Marie Kanza, Chanteuse Afropop</h5>
+                            <p class="card-text">Marie Kanza nous parle de son parcours et de ses nouvelles collaborations musicales...</p>
+                            <a href="#" class="btn btn-primary">Lire plus</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/assets/img/present 3.jpg" class="card-img-top" alt="Actualité 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projets à Venir : Voix de Femmes</h5>
+                            <p class="card-text">Découvrez les prochains projets de Sarah Lumbala, la réalisatrice acclamée...</p>
+                            <a href="#" class="btn btn-primary">Lire plus</a>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Événements à venir</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Exposition : Couleurs d'Afrique</h5>
+                            <p class="card-text">Date : 15 Octobre 2024</p>
+                            <p class="card-text">Lieu : Galerie d'Art de Kinshasa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Concert : Marie Kanza Live</h5>
+                            <p class="card-text">Date : 20 Novembre 2024</p>
+                            <p class="card-text">Lieu : Stade des Martyrs, Kinshasa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Projection : Voix de Femmes</h5>
+                            <p class="card-text">Date : 5 Décembre 2024</p>
+                            <p class="card-text">Lieu : Cinéma Congo, Lubumbashi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -152,18 +204,6 @@
         </div>
     </section>
 
-    <section id="newsletter" class="py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h3>Abonnez-vous à notre Newsletter</h3>
-            <p>Recevez les dernières nouvelles et mises à jour sur nos artistes et événements</p>
-            <form class="form-inline justify-content-center">
-                <input type="email" class="form-control mr-2" placeholder="Votre email" required>
-                <button type="submit" class="btn my-4 btn-primary">S'abonner</button>
-            </form>
-        </div>
-    </section>
-    
-
     <section id="supporters" class="py-5">
         <div class="container">
             <h2 class="text-center">Ceux qui nous soutiennent</h2>
@@ -183,7 +223,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__container container grid">
@@ -244,7 +284,7 @@
      
                        <p class="link__foot">
                           <i class="ri-arrow-right-s-fill"></i>
-                          <a href="#about" class="link__simple">Contactez-nous</a>
+                          <a href="/index.html" class="link__simple">Contactez-nous</a>
                        </p>
      
                        <p class="link__foot">
